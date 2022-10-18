@@ -1,0 +1,32 @@
+{
+  "name": "express-mongodb",
+  "version": "1.0.0",
+  "description": "Express MongoDB",
+  "main": "index",
+  "scripts": {
+    "dev": "pm2 start ecosystem.config.js",
+    "start": "node index.js",
+    "deploy": "webpack && sh deploy.sh"
+  },
+  "author": "Vincent K.",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-async-errors": "^3.1.1",
+    "jsdom": "^16.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash.clonedeep": "^4.5.0",
+    "mongoose": "^5.13.11",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
